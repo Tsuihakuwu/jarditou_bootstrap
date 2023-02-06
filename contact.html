@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Jarditou votre r&eacute;f&eacute;rence pour le jardinage &#33;</title>
+    <!--<link rel="stylesheet" href="assets/css/reset.css">-->
+    <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
+    <!--<link rel="stylesheet" href="/assets/css/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 576px)" href="tablette.css">
+	<link rel="stylesheet" media="screen and (min-width: 768px)" href="desktop.css"> -->
+    <link rel="icon" href="src/img/jarditou_favicon.ico">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--Header-->
+        <header id="header">
+            <div >
+            <img src="src/img/jarditou_logo-removebg-preview.png" alt="logo jarditou" id="logo">
+        </div>
+        <div >
+            <h1 id="slg">La qualit&eacute; depuis 70 ans</h1>
+        </div>
+        </header>
+        <!--Navigation-->
+        <nav id="nav">
+            <ul class="menu_black">
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="tableau.html">Tableau</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="div_promo">
+            <img src="src/img/promotion.jpg" alt="promo" id="promo">
+        </div>
+        <!--Section-->
+        <div id="sa_flex">
+            <section id="section">
+
+                <h2>Tableau</h2>
+                <hr>
+
+                <article id="article">
+                    <!--Formulaire-->
+                    <form action="http://bienvu.net/script.php" method="POST">
+                        <p>&#42; Ces zones sont obligatoires</p>
+                        <br>
+                        <fieldset>
+                            <legend>
+                                <h2>Vos coordonnées</h2>
+                            </legend>
+                            <label for="nom">Votre nom&#42; : </label><input type="text" name="nom" id="nom"
+                                required><br>
+                            <label for="prenom">Votre pr&eacute;nom&#42; : </label><input type="text" name="prenom"
+                                id="prenom" required><br>
+                            <br>
+                            <div id="sx">Sexe&#42; :
+                                <input type="radio" name="sexe" id="s_feminin" value="feminin" checked required><label
+                                    for="s_feminin"> F&eacute;minin</label>
+                                <input type="radio" name="sexe" id="s_masculin" value="masculin" required><label
+                                    for="s_masculin">
+                                    Masculin</label>
+                                <input type="radio" name="sexe" id="s_autre" value="autre" required><label
+                                    for="s_autre">
+                                    Autre</label>
+                            </div>
+                            <br>
+                            <label for="ddn">Date de naissance&#42; : </label><input type="date" name="ddn" id="ddn"
+                                required><br>
+                            <label for="cp">Code postal&#42; : </label><input type="text" name="cp" id="cp"
+                                required><br>
+                            <label for="adr">Adresse : </label><input type="text" name="adr" id="adr"><br>
+                            <label for="ville">Ville : </label><input type="text" name="ville" id="ville"><br>
+                            <label for="email">Email&#42; : </label><input type="email" name="email" id="email"
+                                required><br>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>
+                                <h2>Votre demande</h2>
+                            </legend>
+                            <label for="sujet" id="lb_sujet">Sujet&#42; : </label>
+                            <select name="sujet" id="sujet">
+                                <option value="" selected disabled hidden>Veuillez sel&eacute;ctionner un sujet</option>
+                                <option value="commande">Mes commandes</option>
+                                <option value="question">Question sur un produit</option>
+                                <option value="reclam">R&eacute;clamation</option>
+                                <option value="autre">Autres</option>
+                            </select><br><br>
+                            <label for="question">Votre question&#42; : </label>
+                            <textarea name="question" id="question" rows="3" cols="70"></textarea>
+                        </fieldset>
+                        <br>
+                        <div id="qu_flex"><input type="checkbox" name="accept" id="accept" required><label for="accept"
+                                id="c_accept"> &#42; J'accepte le
+                                traitement
+                                informatique de ce formulaire</label></div><br>
+                        <div id="accept_flex">
+                            <input type="submit" value="Envoyer" class="bt"><input type="reset" value="Annuler"
+                                class="bt">
+                        </div>
+                    </form>
+                </article>
+            </section>
+            <!--Aside-->
+            <aside id="aside">[COLONNE DROITE]</aside>
+        </div>
+        <!--footer-->
+        <footer>
+            <br>
+            <hr>
+            <ul class="menu_black">
+                <li>
+                    <a href="#">Mention l&eacute;gales</a>
+                </li>
+                <li>
+                    <a href="#">Horaires</a>
+                </li>
+                <li>
+                    <a href="#">Plan du site</a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
