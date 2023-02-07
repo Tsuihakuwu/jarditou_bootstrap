@@ -16,48 +16,60 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-    <!--Header-->
-    <header id="header">
-        <img src="src/img/jarditou_logo-removebg-preview.png" title="Logo Jarditou" alt="logo jarditou" id="logo">
-        <h1 id="slg">La qualit&eacute; depuis 70 ans</h1>
-    </header>
-    <!--Navigation-->
-    <nav id="nav">
-        <ul class="menu_black">
-            <li class="menu_item">
-                <a href="index.html">Accueil</a>
-            </li>
-            <li class="menu_item">
-                <a href="tableau.html">Tableau</a>
-            </li>
-            <li class="menu_item">
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
+    <div class="container-fluid mx-0 px-3">
+        <!--Header-->
+        <header id="header" class="row justify-content-between align-items-center mb-2 mt-2">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <img src="src/img/jarditou_logo-removebg-preview.png" alt="logo jarditou" id="logo" class="w-75">
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <p>La qualit&eacute; depuis 70 ans</p>
+            </div>
+        </header>
+        <!--Navigation-->
+        <nav class="navbar navbar-light d-flex" style="background-color: #e3f2fd;">
+            <div class="align-items-start mx-3 d-flex">
+                <a class="navbar-brand" href="#">Jarditou.com</a>
+                <ul class="navbar-nav list-group-horizontal">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="tableau.html">Tableau</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="form-inline my-2 my-lg-0 d-flex">
+                <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion"
+                    aria-label="Votre promotion">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+            </form>
+        </nav>
         <div id="div_promo">
-            <img src="src/img/promotion.jpg" alt="promo" title="Promotion" id="promo">
+            <img src="src/img/promotion.jpg" alt="promo" id="promo" class="mt-2 w-100 rounded">
         </div>
-    </nav>
     <!--Section-->
-    <div id="sa_flex">
+    <div class="d-flex mt-2">
         <section id="section">
             <h2>Tableau</h2>
             <hr>
-            <table>
+            <table class="table">
                 <thead>
                     <tr>
-                        <th>Photo</th>
-                        <th>ID</th>
-                        <th>Cat&eacute;gorie</th>
-                        <th>Libell&eacute;</th>
-                        <th>Prix</th>
-                        <th>Couleur</th>
+                        <th scope="col-2">Photo</th>
+                        <th scope="col-2">ID</th>
+                        <th scope="col-2">Catégorie</th>
+                        <th scope="col-2">Libellé</th>
+                        <th scope="col-2">Prix</th>
+                        <th scope="col-2">Couleur</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img class="tb_img" src="src/img/7.jpg" title="Barbecue Aramis" alt="ID7 Barbecues Aramis Brun 110.00 EURO">
+                        <td class="w-25"><img src="src/img/7.jpg" title="Barbecue Aramis" alt="ID7 Barbecues Aramis Brun 110.00 EURO">
                         </td>
                         <td>7</td>
                         <td>Barbecues</td>
@@ -66,7 +78,7 @@
                         <td>Brun</td>
                     </tr>
                     <tr>
-                        <td><img class="tb_img" src="src/img/8.jpg" title="Barbecue Athos" alt="ID8 Barbecues Athos Noir 249.99 EURO"></td>
+                        <td class="w-25"><img src="src/img/8.jpg" title="Barbecue Athos" alt="ID8 Barbecues Athos Noir 249.99 EURO"></td>
                         <td>8</td>
                         <td>Barbecues</td>
                         <td>Athos</td>
@@ -74,7 +86,7 @@
                         <td>Noir</td>
                     </tr>
                     <tr>
-                        <td><img class="tb_img" src="src/img/11.jpg" title="Barbecue Clatronic" alt="ID11 Barbecues Clatronic Chrome 135.90 EURO">
+                        <td class="w-25"><img src="src/img/11.jpg" title="Barbecue Clatronic" alt="ID11 Barbecues Clatronic Chrome 135.90 EURO">
                         </td>
                         <td>11</td>
                         <td>Barbecues</td>
@@ -83,7 +95,7 @@
                         <td>Chrome</td>
                     </tr>
                     <tr>
-                        <td><img class="tb_img" src="src/img/12.jpg" title="Barbecue Camping" alt="ID12 Barbecues Camping Noir 88 EURO"></td>
+                        <td class="w-25"><img src="src/img/12.jpg" title="Barbecue Camping" alt="ID12 Barbecues Camping Noir 88 EURO"></td>
                         <td>12</td>
                         <td>Barbecues</td>
                         <td>Camping</td>
@@ -91,7 +103,7 @@
                         <td>Noir</td>
                     </tr>
                     <tr>
-                        <td><img class="tb_img" src="src/img/13.jpg" title="Brouette Green" alt="ID13 Brouette Green Verte 49 EURO"></td>
+                        <td class="w-25"><img src="src/img/13.jpg" title="Brouette Green" alt="ID13 Brouette Green Verte 49 EURO"></td>
                         <td>13</td>
                         <td>Brouette</td>
                         <td>Green</td>
@@ -102,21 +114,20 @@
             </table>
         </section>
         <!--Aside-->
-        <aside id="aside">[COLONNE DROITE]</aside>
+        <aside class="d-none" id="aside">[COLONNE DROITE]</aside>
     </div>
     <!--footer-->
-    <footer>
-        <br>
+    <footer id="footer" class="mb-3">
         <hr>
-        <ul class="menu_black">
-            <li class="menu_item">
-                <a href="#">Mention l&eacute;gales</a>
+        <ul class="navbar navbar-dark bg-dark navbar-nav list-group-horizontal rounded w-100 justify-content-start">
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Mention l&eacute;gales</a>
             </li>
-            <li class="menu_item">
-                <a href="#">Horaires</a>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Horaires</a>
             </li>
-            <li class="menu_item">
-                <a href="#">Plan du site</a>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Plan du site</a>
             </li>
         </ul>
     </footer>

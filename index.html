@@ -18,20 +18,20 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid mx-0 px-3">
         <!--Header-->
-        <header id="header" class="d-flex justify-content-between align-items-center">
-            <div>
-                <img src="src/img/jarditou_logo-removebg-preview.png" alt="logo jarditou" id="logo">
+        <header id="header" class="row justify-content-between align-items-center mb-2 mt-2">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <img src="src/img/jarditou_logo-removebg-preview.png" alt="logo jarditou" id="logo" class="w-75">
             </div>
-            <div>
-                <h1>La qualit&eacute; depuis 70 ans</h1>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <p>La qualit&eacute; depuis 70 ans</p>
             </div>
         </header>
         <!--Navigation-->
-        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-            <div class="d-flex justify-content-start align-items-center">
-                <span class="">Jarditou.com</span>
+        <nav class="navbar navbar-light d-flex" style="background-color: #e3f2fd;">
+            <div class="align-items-start mx-3 d-flex">
+                <a class="navbar-brand" href="#">Jarditou.com</a>
                 <ul class="navbar-nav list-group-horizontal">
                     <li class="nav-item mx-3">
                         <a class="nav-link" href="index.html">Accueil</a>
@@ -44,68 +44,78 @@
                     </li>
                 </ul>
             </div>
-            <div class="d-flex justify-content-end">
-                <input type="text" placeholder="Votre promotion">
-                <input type="button" value="Rechercher">
-            </div>
+            <form class="form-inline my-2 my-lg-0 d-flex">
+                <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion"
+                    aria-label="Votre promotion">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+            </form>
         </nav>
+        <div id="div_promo">
+            <img src="src/img/promotion.jpg" alt="promo" id="promo" class="mt-2 w-100 rounded">
+        </div>
         <!--Section-->
-        <div id="sa_flex">
-            <section id="section">
-                <h2>Accueil</h2>
-                <hr>
-                <h3>L'entreprise</h3>
-                <article>
-                    <p>
-                        Notre entreprise familiale met tout son savoir&#45;faire &agrave; votre disposition dans le
-                        domaine
-                        du
-                        jardin et du
-                        paysagisme.<br>
-                        Cr&eacute;&eacute;e il y a 70 ans, notre entreprise vend fleurs, arbustes, mat&eacute;riel
-                        &agrave;
-                        main
-                        et
-                        motoris&eacute;s.<br>
-                        Implant&eacute;s &agrave; Amiens, nous intervenons dans tout le d&eacute;partement de la Somme :
-                        Albert,
-                        Doullens, P&eacute;ronne, Abbeville,
-                        Corbie
-                    </p>
+        <div class="row mt-2">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                <section>
+                    <h2>Accueil</h2>
+                    <hr>
+                    <h3>L'entreprise</h3>
+                    <article>
+                        <p>
+                            Notre entreprise familiale met tout son savoir&#45;faire &agrave; votre disposition dans le
+                            domaine
+                            du
+                            jardin et du
+                            paysagisme.<br>
+                            Cr&eacute;&eacute;e il y a 70 ans, notre entreprise vend fleurs, arbustes, mat&eacute;riel
+                            &agrave;
+                            main
+                            et
+                            motoris&eacute;s.<br>
+                            Implant&eacute;s &agrave; Amiens, nous intervenons dans tout le d&eacute;partement de la
+                            Somme :
+                            Albert,
+                            Doullens, P&eacute;ronne, Abbeville,
+                            Corbie
+                        </p>
 
-                    <h3>Qualit&eacute;</h3>
-                    <p>
-                        Nous mettons &agrave; votre disposition un service personnalis&eacute;, avec 1 seul
-                        interlocuteur
-                        durant
-                        tout votre
-                        projet.<br>
-                        Vous serez s&eacute;duit par notre expertise, nos comp&eacute;tences et notre s&eacute;rieux.
-                    </p>
-                    <h3>Devis gratuit</h3>
-                    <p>
-                        Vous pouvez bien s&ucirc;r contacter pour de plus amples informations ou pour une demande
-                        d’intervention.
-                        Vous
-                        souhaitez un devis ? Nous vous le r&eacute;alisons gratuitement.
-                    </p>
-                </article>
-            </section>
+                        <h3>Qualit&eacute;</h3>
+                        <p>
+                            Nous mettons &agrave; votre disposition un service personnalis&eacute;, avec 1 seul
+                            interlocuteur
+                            durant
+                            tout votre
+                            projet.<br>
+                            Vous serez s&eacute;duit par notre expertise, nos comp&eacute;tences et notre
+                            s&eacute;rieux.
+                        </p>
+                        <h3>Devis gratuit</h3>
+                        <p>
+                            Vous pouvez bien s&ucirc;r contacter pour de plus amples informations ou pour une demande
+                            d’intervention.
+                            Vous
+                            souhaitez un devis ? Nous vous le r&eacute;alisons gratuitement.
+                        </p>
+                    </article>
+                </section>
+            </div>
             <!--Aside-->
-            <aside id="aside">[COLONNE DROITE]</aside>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <aside style="background-color: #fae900;" class="h-100">[COLONNE DROITE]</aside>
+            </div>
         </div>
         <!--footer-->
-        <footer id="footer">
+        <footer id="footer" class="mb-3">
             <hr>
-            <ul class="menu_black">
-                <li>
-                    <a href="#">Mention l&eacute;gales</a>
+            <ul class="navbar navbar-dark bg-dark navbar-nav list-group-horizontal rounded w-100 justify-content-start">
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Mention l&eacute;gales</a>
                 </li>
-                <li>
-                    <a href="#">Horaires</a>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Horaires</a>
                 </li>
-                <li>
-                    <a href="#">Plan du site</a>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Plan du site</a>
                 </li>
             </ul>
         </footer>

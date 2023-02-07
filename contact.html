@@ -17,38 +17,46 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid mx-0 px-3">
         <!--Header-->
-        <header id="header">
-            <div >
-            <img src="src/img/jarditou_logo-removebg-preview.png" alt="logo jarditou" id="logo">
-        </div>
-        <div >
-            <h1 id="slg">La qualit&eacute; depuis 70 ans</h1>
-        </div>
+        <header id="header" class="row justify-content-between align-items-center mb-2 mt-2">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <img src="src/img/jarditou_logo-removebg-preview.png" alt="logo jarditou" id="logo" class="w-75">
+            </div>
+            <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <p>La qualit&eacute; depuis 70 ans</p>
+            </div>
         </header>
         <!--Navigation-->
-        <nav id="nav">
-            <ul class="menu_black">
-                <li>
-                    <a href="index.html">Accueil</a>
-                </li>
-                <li>
-                    <a href="tableau.html">Tableau</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-light d-flex" style="background-color: #e3f2fd;">
+            <div class="align-items-start mx-3 d-flex">
+                <a class="navbar-brand" href="#">Jarditou.com</a>
+                <ul class="navbar-nav list-group-horizontal">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="tableau.html">Tableau</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="form-inline my-2 my-lg-0 d-flex">
+                <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion"
+                    aria-label="Votre promotion">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+            </form>
         </nav>
         <div id="div_promo">
-            <img src="src/img/promotion.jpg" alt="promo" id="promo">
+            <img src="src/img/promotion.jpg" alt="promo" id="promo" class="mt-2 w-100 rounded">
         </div>
         <!--Section-->
-        <div id="sa_flex">
+        <div class="d-flex mt-2">
             <section id="section">
 
-                <h2>Tableau</h2>
+                <h2>Contact</h2>
                 <hr>
 
                 <article id="article">
@@ -114,21 +122,20 @@
                 </article>
             </section>
             <!--Aside-->
-            <aside id="aside">[COLONNE DROITE]</aside>
+            <aside class="d-none" id="aside">[COLONNE DROITE]</aside>
         </div>
         <!--footer-->
-        <footer>
-            <br>
+        <footer id="footer" class="mb-3">
             <hr>
-            <ul class="menu_black">
-                <li>
-                    <a href="#">Mention l&eacute;gales</a>
+            <ul class="navbar navbar-dark bg-dark navbar-nav list-group-horizontal rounded w-100 justify-content-start">
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Mention l&eacute;gales</a>
                 </li>
-                <li>
-                    <a href="#">Horaires</a>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Horaires</a>
                 </li>
-                <li>
-                    <a href="#">Plan du site</a>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Plan du site</a>
                 </li>
             </ul>
         </footer>
