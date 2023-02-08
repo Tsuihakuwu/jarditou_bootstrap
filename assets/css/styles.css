@@ -1,352 +1,66 @@
-/********************** Général **********************/
-
-body {
-    background-image: url("../../src/img/background.jpg");
+/* Background */
+.back {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23228e5b' fill-opacity='0.4' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-#header {
-    display: flex;
-    justify-content: space-around;
-    align-content: flex-start;
-    align-items: center;
-    width: 100%;
-    background-color: rgba(80, 80, 80, .95);
+.container {
+    background-color: white;
+}
+
+/* Debug Fieldset et Legend : Impossible de trouver le paramètre de legend modifié par bootstrap qui déplace le texte sur la border du fieldset */
+/* DEBUG 2 SOLUTION : La propriété float de Legend se met sur left avec BS, il faut la reset à none !! */
+fieldset .s1 {
+    border: 1px dotted #000;
     border-radius: 20px;
-    /*border: 10px solid black;*/
+    background-color:#c7ffbc;
 }
 
-#logo {
-    width: 20%;
+legend {
+    float: none;
+    font-weight: 410;
+    margin-bottom: -12px !important;
 }
 
-#slg {
-    font-size: 25pt;
-    font-style: italic;
-    font-weight: 550;
+/* Bricolage et mise en forme Pixel Perfect OCD*/
+
+.bottom_no_margin {
+    margin-bottom: 0rem;
 }
 
-.menu_black {
-    background-color: rgba(0, 0, 0, 0.95);
-    height: 55px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
+/* Header Nav Footer */
+#slogan {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: -10px;
 }
 
-.menu_black li {
-    display: inline;
-    margin-right: 10px;
+#navbrand {
+    margin-top: -2px;
 }
 
-a {
-    color: white;
+#navbar_submit {
+    margin-left: 5px;
+}
+/* Page Index */
+
+
+/* Page Tableau */
+
+.bdr {
+    border-radius: 6px;
+    overflow: hidden;
 }
 
-#promo {
-    width: 100%;
-    border-radius: 190px;
-    height: 320px;
-}
-
-#sa_flex {
-    display: flex;
-    flex-direction:row;
-    align-content:flex-start;
-}
-
-section {
-    background-color: rgba(80, 80, 80, .95);
-    width: 69%; /********** Nice... ***********/
-    text-align: justify;
-    border-radius: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    margin-top: 20px;
-}
-
-aside {
-    display: flex;
-    justify-content: center;
-    align-content: flex-start;
-    align-items: center;
-    background-color: rgba(80, 80, 80, 0.9);
-    margin-top: 20px;
-    margin-left: 6px;
-    border-radius: 20px;
-    width:30%;
-}
-
-h1 {
-    font-size: initial;
-}
-
-h2 {
-    font-size: initial;
-}
-
-/********************* Page tableau *********************/
-
-textarea {
+/* Page Formulaire */
+#question {
     resize: none;
+    width: 572px;
 }
 
-.tb_img {
-    width: 200px;
+#sujet {
+    margin-left: 6px;
 }
 
-/******************** Page formulaire *********************/
-
-#qu_flex {
-    display: flex;
-    justify-content:left;
-}
-
-
-#accept_flex {
-    display: flex;
-    justify-content: right;
-}
-
-/************************** MEDIA MOBILE PORTRAIT **************************/
-
-@media screen and (max-height:768px) and (orientation:portrait)  {
-
-    /* Adapté pour 432*768 */
-
-    /* Général */
-
-    #logo {
-        width: 30%;
-    }
-
-    .menu_black {
-        font-size: 12px;
-        display: flex;
-        align-items: center;
-        justify-content:center;
-        flex-direction: column;
-        padding: 0;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        height: 50px;
-        margin:0;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    h1#slg {
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 15px;
-        padding-left: 5px;
-    }
-
-    h2 {
-        font-size: 15px;
-        padding-left: 5px;
-    }
-
-    p {
-        font-size: 12px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    #promo {
-        max-height: 80px;
-    }
-
-    #section {
-        padding: 0;
-        width: 100%;
-        margin: 0;
-        margin-top:5px;
-    }
-
-    #aside {
-        display:none;
-    }
-
-    hr {
-        margin: 5px;
-        padding: 0px;
-    }
-
-    /********************* Page tableau *********************/
-
-    .tb_img {
-        width:50px;
-    }
-
-    table {
-        max-width:284px;
-        font-size: 16px;
-    }
-
-    th {
-        min-width: 40px;
-    }
-
-    /******************** Page formulaire *********************/
-
-    label {
-        font-size: 12px;
-        float: left;
-        clear: both;
-    }
-
-    input {
-        max-width:120px;
-        float: right;
-    }
-    #sx {
-        font-size: 12px;
-    }
-    #sx input {
-        float:initial;
-    }
-    #sx label {
-        font-size: 10px;
-        float:initial;
-    }
-    textarea {
-        width:239px;
-        resize:none;
-    }
-    fieldset {
-        margin:0;
-        margin-right: 5px;
-        margin-left: 5px;
-    }
-    .bt {
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }
-
-}
-
-/************************** MEDIA MOBILE PAYSAGE **************************/
-
-@media screen and (max-width:768px) and (orientation:landscape) {
-
-    /***************** Adapté pour 768*432 *****************/
-
-    /********************* Général *********************/
-
-    #logo {
-        width: 40%;
-    }
-
-    .menu_black {
-        font-size: 12px;
-        display: flex;
-        align-items: center;
-        justify-content:space-around;
-        flex-direction: column;
-        padding: 0;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        height: 50px;
-        margin:0;
-        margin-top: 5px;
-        margin-bottom: 5px;   
-    }
-
-    
-
-    h1#slg {
-        font-size: 28px;
-    }
-
-    h1 {
-        font-size: 19px;
-        padding-left: 5px;
-    }
-
-    h2 {
-        font-size: 19px;
-        padding-left: 5px;
-    }
-
-    p {
-        font-size: 14px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    #promo {
-        max-height: 130px;
-    }
-
-    #section {
-        margin: 0;
-        margin-top: 5px;
-        padding: 0;
-        width: 100%;
-    }
-
-    #aside {
-        display:none;
-    }
-    
-    /********************* Page tableau *********************/
-
-    .tb_img {
-        width:75px;
-    }
-
-    table {
-        max-width:284px;
-        font-size: 14px;
-    }
-    th {
-        min-width: 130px;
-    }
-
-      /********************* Page formulaire *********************/
-
-    label {
-        font-size: 14px;
-        float: left;
-        clear: both;
-    }
-
-    input {
-        max-width:200px;
-        float: right;
-    }
-    #sx {
-        font-size: 12px;
-    }
-    #sx input {
-        float:initial;
-    }
-    #sx label {
-        font-size: 10px;
-        float:initial;
-    }
-    #lb_sujet {
-        margin:0;
-        padding:0;
-        margin-top:10px;
-    }
-    textarea {
-        padding:0;
-        margin:0;
-        margin-top: 10px;
-        width:349px;
-        resize:none;
-    }
-    fieldset {
-        margin:0;
-        margin-right: 5px;
-        margin-left: 5px;
-    }
-    .bt {
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }
+#evjs_jarditou_sb {
+    margin-right: 5px;
 }
